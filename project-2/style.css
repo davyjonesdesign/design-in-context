@@ -10,6 +10,18 @@ body {
   /* height: 100vh; */
 }
 
+#helptext {
+  position: fixed;
+  font-family: reenie-beanie, sans-serif;
+  font-size: 3vw;
+  right: 12.5vw;
+  top: 5vw;
+
+  width: 25vw;
+  z-index: 1000000000;
+  color: white
+}
+
 
 
 
