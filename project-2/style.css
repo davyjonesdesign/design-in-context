@@ -135,6 +135,7 @@ button svg {
   display: flex;
   flex-direction: row;
   align-items: center;
+  z-index: 1000000000000;
 }
 
 .left {
@@ -303,7 +304,7 @@ h1 {
   pointer-events: auto;
 }
 .annotation {
-  padding-top: 220px;
+  padding-top: 265px;
   color: #547655;
   transition: all .2s ease-in-out; 
 }
@@ -329,7 +330,7 @@ h1 {
   cursor: none;
   color: white;
   background: #547655;
-  z-index: 1000000000000000;
+  z-index: 1000000;
   border-radius: 20px;
   /* letter-spacing: 2px; */
 }
