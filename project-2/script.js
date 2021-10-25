@@ -57,7 +57,7 @@ $(document).ready(function () {
       $("#hl-brutal").toggleClass("highlight-clicked")
     }
   );
-  $("#hl-swiss").hover(
+  $("#hl-brutal").hover(
     function () {
       $("#brutal-ann").toggleClass("hvr-white");
     }
