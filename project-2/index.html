@@ -5,10 +5,11 @@
     <title>MCAD: Design in Context Project 2 POC</title>
     <link rel="stylesheet" href="https://use.typekit.net/euc2cwz.css" />
     <link rel="stylesheet" href="https://use.typekit.net/fph1cns.css" />
+    <link rel="stylesheet" href="https://use.typekit.net/tnt7amz.css">
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
-    <p id="helptext">Hover over the green outlined boxes...</p>
+    <p id="helptext">Hover and click on the underlined text...</p>
     <div class="wrapper">
       <div class="left">
         <div id="col-lft" class="screen">
@@ -64,26 +65,34 @@
               ></a>
             </div>
           </div>
-          
+
           <div class="content">
             <p>
-              Recently, Google announced a new, updated and refreshed Material
-              Design at Google I/O. In <span id="hl-one" class="highlight">material.io</span> they define it as a visual
-              language that synthesizes the classic principles of good design with the innovation of technology and science.
+              Recently, Google announced a<button id="hl-update" class="highlight">
+                new, updated and refreshed</button
+              >Material Design at Google I/O. In material.io they define it as a
+              visual language that synthesizes the classic principles of good
+              design with the innovation of technology and science.
             </p>
             <p>
-              There we can find a list of <span id="hl-two" class="highlight">formal and functional</span> generic
+              There we can find a list of formal and functionalgeneric
               guidelines to embody most of our digital interface designs.
-              Material Design is presented as a universal and neutral language
-              that every designer and developer should put into practice.
+              Material Design is presented as a<button
+                id="hl-universal"
+                class="highlight"
+              >
+                universal and neutral language</button
+              >a that every designer and developer should put into practice.
             </p>
 
             <h3>Materialism is the new Modernism?</h3>
 
             <p>
               In design history, the idea of universality and neutrality comes
-              from the Modernism movement - or Swiss Style - which, one could
-              suppose, is what Google means by “good classic design”.
+              from the Modernism movement -
+              <button id="hl-swiss" class="highlight">or Swiss Style</button> -
+              which, one could suppose, is what Google means by “good classic
+              design”.
             </p>
             <p>
               Modernism appears after the carnage of the First World War and it
@@ -131,7 +140,7 @@
               octopus that monopolizes the Web.
             </p>
             <p>
-              That’s why, more than ever, movements like Web-Brutalism that have
+              That’s why, more than ever, movements like <button id="hl-brutal" class="highlight">Web-Brutalism</button> that have
               the boldness and the courage to question those “rational
               aesthetics”, dictated by science and technology, are very
               relevant.
@@ -198,50 +207,34 @@
               again.
             </p>
           </div>
-          <div class="lines" id="lines">
-            <div class="line material"></div>
-            <div class="line drugs"></div>
-            <div class="line"></div>
-            <div class="line"></div>
-            <div class="line"></div>
-            <div class="line"></div>
-            <div class="line"></div>
-            <div class="line"></div>
-            <div class="line"></div>
-            <div class="line"></div>
-            <div class="line"></div>
-            <div class="line"></div>
-            <div class="line"></div>
-            <div class="line"></div>
-            <div class="line"></div>
-            <div class="line"></div>
-          </div>
         </div>
         <div class="computer-stem"></div>
         <div class="computer-foot"></div>
       </div>
       <div class="col-wrapper">
-        
-
         <div class="col" id="col-rt">
-          <p class="annotation" id="material-ann">
-            Example Annotation
+          <p class="annotation" id="update-ann">
+            Since this article was published, Material updated their design
+            guidelines, components and resources about a dozen times. Many of
+            which have been centered around accessibility.
           </p>
-          <p class="annotation">
+          <p class="annotation" id="univ-ann">
             There we can find a list of formal and functional generic guidelines
             to embody most of our digital interface designs. Material Design is
             presented as a universal and neutral language that every designer
             and developer should put into practice.
           </p>
 
-          <h3>Materialism is the new Modernism?</h3>
+          <!-- <h3>Materialism is the new Modernism?</h3> -->
 
-          <p class="annotation">
-            In design history, the idea of universality and neutrality comes
-            from the Modernism movement - or Swiss Style - which, one could
-            suppose, is what Google means by “good classic design”.
+          <p class="annotation" id="swiss-ann">
+            Ribeiro makes a synonymous connection between the Modernism movement
+            and Swiss Style. While the Swiss Style was an expression of
+            Modernism that held great influence on the movement, a distinction
+            should be made considering the excess of Modernist expressions that
+            held little to no connections to the Swiss.
           </p>
-          <p class="annotation">
+          <p class="annotation" id="brutal-ann">
             Modernism appears after the carnage of the First World War and it
             was built from a utopian desire of achieving a universal language
             that would sustain harmonious communication between all nations.
@@ -259,7 +252,6 @@
             that can be a problem.
           </p>
 
-          <h4>Pure and neutral aesthetics</h4>
 
           <p class="annotation">
             When only one perspective dominates the discourse of what
@@ -280,7 +272,9 @@
             aesthetic for our interface designs, we are not just making a
             cosmetic choice. It's also a political choice.
           </p>
-          <p class="annotation">We are representing Google, whatever that might mean.</p>
+          <p class="annotation">
+            We are representing Google, whatever that might mean.
+          </p>
           <p class="annotation">
             Google is a multinational corporation that represents a particular
             culture and Material Design is just another tentacle of the octopus
@@ -321,7 +315,6 @@
             The aesthetic should be the result of your user's needs and business
             goals.
           </p>
-          <h4>Learning from graphic design</h4>
           <p class="annotation">
             It's a fact that when the time comes to build digital products for
             specific clients, it's a risk to think outside of the box, as we
@@ -529,7 +522,6 @@
                 />
               </g>
             </svg>
-  
           </button>
           <button id="scrollDown">
             <svg
@@ -709,7 +701,6 @@
             </svg>
           </button>
         </div>
-        
       </div>
     </div>
     <!-- partial -->

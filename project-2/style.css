@@ -1,29 +1,32 @@
-
 body {
   background:#f3ae6b;
+  background:
+linear-gradient(63deg, #f3ae6b 23%, transparent 23%) 7px 0,
+linear-gradient(63deg, transparent 74%, #f3ae6b 78%),
+linear-gradient(63deg, transparent 34%, #f3ae6b 38%, #f3ae6b 58%, transparent 62%),
+#c9935d;
+  background-size: 4px 24px;
   overflow: hidden;
   display: flex;
   flex-direction: column;
   align-content: center;
   justify-content: center;
   margin: 0;
-  /* height: 100vh; */
 }
-
+button:hover {
+  cursor: pointer;
+}
 #helptext {
   position: fixed;
   font-family: reenie-beanie, sans-serif;
-  font-size: 3vw;
-  right: 12.5vw;
-  top: 5vw;
-
-  width: 25vw;
+  font-family: chalky, sans-serif; 
+  font-size: 2vw;
+  right: 3vw;
+  top: 2vw;
+  width: 30vw;
   z-index: 1000000000;
   color: white
 }
-
-
-
 
 
 .blue {
@@ -44,6 +47,7 @@ body {
 .darkgray {
   color: #363636
 }
+
 
 .button-wrapper {
   width: 48px;
@@ -76,13 +80,24 @@ button svg {
 }
 .wrapper {
   font-family: reenie-beanie, sans-serif;
+  font-family: chalky, sans-serif; 
   font-weight: 400;
   font-style: normal;
   margin: 2vh;
-  background: #547655;
+  background:
+    radial-gradient(#547655 15%, transparent 16%) 0 0,
+    radial-gradient(#547655 15%, transparent 16%) 8px 8px,
+    radial-gradient(rgba(255, 255, 255, 0.1) 15%, transparent 20%) 0 1px,
+    radial-gradient(rgba(255, 255, 255, 0.1)  15%, transparent 20%) 8px 9px;
+  background-color:#547655;
+  background-size:16px 16px;
+  box-shadow:
+    inset 0 0 5px #2e412f,      /* inner white */
+    0 0 5px #0000001f;           /* outer white */
+  
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
   color: #202124;
   height: 94vh;
@@ -95,7 +110,7 @@ button svg {
   font-size: 1rem;
   display: flex;
   flex-direction: column;
-  line-height: 1.5rem;
+  line-height: 1.75rem;
   border: 20px solid #dbdbdb;
   border-radius: 10px;
   overflow-y: hidden;
@@ -116,11 +131,11 @@ button svg {
   /* overflow-y: auto; */
   -ms-overflow-style: none;
   scrollbar-width: none; 
-  height: 50vh;
-  font-size: 1.75rem;
+  height: 80vh;
+  font-size: 1.5rem;
   line-height: 1.75rem;
   width: 30vw;
-  padding: 10px 10px 0 20px;
+  padding: 10px 35px 0 10px;
   color: #e2e2e2;
 }
 
@@ -131,7 +146,7 @@ button svg {
 }
 
 .col-wrapper {
-  margin: 11vh 0 1vh;
+  margin: 3vh 0 1vh;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -169,14 +184,14 @@ h1 {
 }
 @media screen and (max-width: 1291px) {
   h1 {
-    font-size: 30px;
+    font-size: 28px;
     letter-spacing: 0;
   }
   .shadow {
     height: 172px;
   }
 }
-@media screen and (max-width: 949px) {
+@media screen and (max-width: 955px) {
   h1 {
     font-size: 24px;
     letter-spacing: 0;
@@ -228,7 +243,7 @@ h1 {
   height: 24px;
   font-size: 14px;
 }
-.searchbar{
+.searchbar {
   height:45px;
   border:none;
   width:100%;
@@ -269,71 +284,91 @@ h1 {
   pointer-events: none;
 }
 
-/* lines */
-.lines {
-  padding-left: 20px;
-  position: absolute;
-  z-index: -1;
-  overflow-y: scroll;
-  margin: 141px 0 0 0;
-  width: 51.5vw;
-  height: 55vh;
-  -ms-overflow-style: none;
-  scrollbar-width: none;
-  pointer-events: none;
-
-}
-.lines::-webkit-scrollbar {
-  display: none;
-}
-.line {
-  margin: 100px 0 0 auto ;
-  height: 4px;
-  transition: all .2s ease-in-out; 
-  background-color: rgba(0, 0, 0, 0);
-}
 .highlight {
-  color: #547655;
-  background: white;
-  border: 1px solid #547655;
+  text-decoration: none;
+  color: black;
+  background: #ffffff;
+  border: 3px solid #fff;
+  border-bottom: 3px solid rgb(255, 147, 147);
+  /* border-radius: 20px; */
   position: relative;
   display: inline-block;
-  padding: 2px 6px 0px;
   transition: all .2s ease-in-out; 
   cursor: pointer;
   pointer-events: auto;
+  outline: none;
+  margin: 0;
+  font-size: 1rem;
+  padding: 3px 0 2px;
+  /* margin: auto 3px; */
 }
 .annotation {
-  padding-top: 265px;
-  color: #547655;
+  color: rgba(0, 0, 0, 0);
   transition: all .2s ease-in-out; 
+  margin: 0;
+
 }
-.material {
-  margin-top: 295px;
+.update {
+  margin-top: 5vh;
 }
-@media screen and (max-width: 1669px) {
-  .material {
-    margin-top: 319px;
+#update-ann {
+  padding: 46vh 0 0;
+}
+
+.univ {
+  margin-top: 100px;
+}
+#univ-ann {
+  padding-top: 3vh;
+}
+
+.swiss {
+  margin-top: 100px;
+}
+#swiss-ann {
+  padding-top: 3vh;
+}
+@media screen and (max-width: 1458px) {
+  .univ {
+    margin-top: 147px;
   }
 }
 @media screen and (max-width: 1291px) {
-  .material {
+  .annotation {
+    padding-top: 340px;
+  }
+  .update {
     margin-top: 312px;
   }
 }
+@media screen and (max-width: 992px) {
+  .annotation {
+    padding-top: 370px;
+  }
+  .update {
+    margin-top: 336px;
+  }
+}
 @media screen and (max-width: 883px) {
-  .material {
+  .update {
     margin-top: 335px;
   }
 }
 .highlight:hover {
-  cursor: none;
-  color: white;
-  background: #547655;
-  z-index: 1000000;
-  border-radius: 20px;
-  /* letter-spacing: 2px; */
+  cursor: pointer;
+  color: black;
+  background: rgb(253, 236, 236);
+  border-bottom-color: rgb(233, 113, 113);
 }
-.content:hover ~ .lines {
-  z-index: 1;
+.highlight-clicked {
+  cursor: pointer;
+  color: black;
+  background: rgb(255, 224, 224);
+  border-bottom-color: rgb(197, 58, 58);
+}
+.click-white {
+  color: white;
+}
+.hvr-white {
+  color: white;
 }
