@@ -117,7 +117,7 @@ button svg {
   align-items: center;
   color: #202124;
   height: 94vh;
-  /* overflow: hidden; */
+  overflow: hidden;
   /* padding: 2vh 0; */
   padding-top: 2vh
 }
@@ -135,8 +135,6 @@ button svg {
   max-height: 600px;
   width: 40vw;
   background: white;
-  /* -ms-overflow-style: none; */
-  scrollbar-width: none; 
   box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
   z-index: 100000;
 }
@@ -206,7 +204,7 @@ h1 {
     letter-spacing: 0;
   }
   .shadow {
-    height: 156px;
+    height: 157px;
   }
 }
 @media screen and (max-width: 1204px) {
