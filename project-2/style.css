@@ -1,34 +1,53 @@
 body {
-  background:#f3ae6b;
-  background:
-linear-gradient(63deg, #f3ae6b 23%, transparent 23%) 7px 0,
-linear-gradient(63deg, transparent 74%, #f3ae6b 78%),
-linear-gradient(63deg, transparent 34%, #f3ae6b 38%, #f3ae6b 58%, transparent 62%),
-#c9935d;
-  background-size: 4px 24px;
+  background:#B78240;
   overflow: hidden;
   display: flex;
   flex-direction: column;
   align-content: center;
   justify-content: center;
   margin: 0;
+  box-shadow:
+    inset 0 4px 15px #f3bc7a;
 }
 button:hover {
   cursor: pointer;
 }
-#helptext {
+
+.helptext {
+  display: flex;
+  background:white;
+  border: 2px solid rgba(0, 0, 0, 0);
+  padding: 10px 15px;
+  border-radius: 10px;
   position: fixed;
-  font-family: reenie-beanie, sans-serif;
-  font-family: chalky, sans-serif; 
-  font-size: 2vw;
-  right: 3vw;
-  top: 2vw;
-  width: 30vw;
+  font-family: swister, sans-serif;
+  font-weight: 400;
+  letter-spacing: 2px;
+  font-style: normal;
+  font-size: 1em;
+  right: 5px;
+  top: 5px;
   z-index: 1000000000;
-  color: white
+  color: #202124;
+  transition: all .2s ease-in-out;
+  box-shadow: 0px 3px 8px 0px rgba(0, 0, 0, 0.35);
+  flex-direction: row;
 }
 
+.helptext svg {
+  max-width: 20px;
+  padding: 10px;
+  margin-left: 20px;
+  fill: #37383d70;
+}
+.helptext p, .helptext h4 {
+  margin: 0;
+}
+.helptext svg:hover {
+  fill: #202124;
+}
 
+/* color classes */
 .blue {
   color: #176BEF;
 }
@@ -48,17 +67,18 @@ button:hover {
   color: #363636
 }
 
-
 .button-wrapper {
   width: 48px;
   margin: 1vh 5px;
 }
 button {
-  background-color: #547655;
+  background-color: rgba(255, 255, 255, 0.1);
   border: 2px solid #e2e2e2;
+  font-size: 1rem;
   color:#e2e2e2;
   outline: none;
   margin: 5vh 0;
+  transition: all .2s ease-in-out;
 }
 #scrollDown {
   border-radius: 10px 10px 50px 50px;
@@ -70,6 +90,7 @@ button {
 }
 button:hover{
   background-color: rgba(227, 227, 227, 0.25);
+  transform: scale(1.1)
 }
 button svg {
   width: 32px;
@@ -79,22 +100,17 @@ button svg {
   transform: rotate(180deg);
 }
 .wrapper {
-  font-family: reenie-beanie, sans-serif;
-  font-family: chalky, sans-serif; 
+  font-family: swister, sans-serif;
   font-weight: 400;
+  letter-spacing: 1.5px;
   font-style: normal;
   margin: 2vh;
-  background:
-    radial-gradient(#547655 15%, transparent 16%) 0 0,
-    radial-gradient(#547655 15%, transparent 16%) 8px 8px,
-    radial-gradient(rgba(255, 255, 255, 0.1) 15%, transparent 20%) 0 1px,
-    radial-gradient(rgba(255, 255, 255, 0.1)  15%, transparent 20%) 8px 9px;
-  background-color:#547655;
-  background-size:16px 16px;
+  background-color:#43553d;
+  background-size:100% 100%;
   box-shadow:
-    inset 0 0 5px #2e412f,      /* inner white */
+    /* inset 0 0 200px #181818,      inner white */
     0 0 5px #0000001f;           /* outer white */
-  
+  background-image: url('assets/annie-spratt-unsplash.jpg');
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -107,18 +123,19 @@ button svg {
 }
 .screen {
   font-family: 'Open Sans', sans-serif;
+  letter-spacing: 0px;
   font-size: 1rem;
   display: flex;
   flex-direction: column;
-  line-height: 1.75rem;
+  line-height: 2rem;
   border: 20px solid #dbdbdb;
   border-radius: 10px;
-  overflow-y: hidden;
+  overflow-y: scroll;
   height: 75vh;
   max-height: 600px;
-  width: 50vw;
+  width: 40vw;
   background: white;
-  -ms-overflow-style: none;
+  /* -ms-overflow-style: none; */
   scrollbar-width: none; 
   box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
   z-index: 100000;
@@ -132,9 +149,10 @@ button svg {
   -ms-overflow-style: none;
   scrollbar-width: none; 
   height: 80vh;
-  font-size: 1.5rem;
-  line-height: 1.75rem;
-  width: 30vw;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1rem;
+  width: 40vw;
   padding: 10px 25px 0 25px;
   color: #e2e2e2;
 }
@@ -170,8 +188,8 @@ button svg {
   top: -200px;
 }
 .shadow {
-  height: 178px;
-  width: 50vw;
+  height: 158px;
+  width: 40vw;
   background: white;
   z-index: 0;
   position: fixed;
@@ -182,25 +200,25 @@ h1 {
   letter-spacing: -1px;
   padding-top: 30px;
 }
-@media screen and (max-width: 1291px) {
+@media screen and (max-width: 1623px) {
   h1 {
     font-size: 28px;
     letter-spacing: 0;
   }
   .shadow {
-    height: 172px;
+    height: 156px;
   }
 }
-@media screen and (max-width: 955px) {
+@media screen and (max-width: 1204px) {
   h1 {
     font-size: 24px;
     letter-spacing: 0;
   }
   .shadow {
-    height: 171px;
+    /* height: 171px; */
   }
 }
-@media screen and (max-width: 819px) {
+@media screen and (max-width: 1033px) {
   h1 {
     font-size: 18px;
     letter-spacing: 0;
@@ -216,7 +234,7 @@ h1 {
 .bar{
   padding: 3px 8px 0 16px;
   margin:0 auto;
-  width: 45vw;
+  width: 32vw;
   border-radius:30px;
   display: flex;
   border: 1px solid #dcdcdc;
@@ -238,7 +256,7 @@ h1 {
 }
 .voice-icon {
   height: 24px;
-  margin: 10px 5px 10px 15px;
+  margin: 10px 5px 5px 15px;
   line-height: 24px;
   height: 24px;
   font-size: 14px;
@@ -258,14 +276,14 @@ h1 {
 }
 
 .computer-stem {
-  width: 10vw;
+  width: 5vw;
   height: 8vh;
   background: #dbdbdb;
   margin: 0 10px;
 }
 .computer-foot {
-  width: 40vw;
-  height: 6vh;
+  width: 30vw;
+  height: 4vh;
   border-radius:50px 50px 0 0;
   background: #dbdbdb;
   box-shadow: 0px -5px 5px 0px rgba(0, 0, 0, 0.13);
@@ -274,8 +292,8 @@ h1 {
 }
 
 .content {
-  width: 45vw;
-  padding: 8px 16px;
+  width: 28vw;
+  padding: 8px 40px;
   border-radius: 8px;
   margin-top: 20px;
   border: 1px solid #dfe1e5;
@@ -284,13 +302,44 @@ h1 {
   pointer-events: none;
 }
 
+.annotation {
+  color: rgba(0, 0, 0, 0);
+  transition: all .2s ease-in-out;
+  margin: 10px 0 5px;
+  padding-left: 15px;
+  border-left: 3px solid rgb(0, 0, 0, 0);
+  font-size: 1rem;
+  line-height: 1.15rem;
+}
+.list {
+  margin: 0;
+  padding-left: 20px;
+}
+.annoation-con {
+  border-color: rgb(147, 206, 255);
+}
+.annoation-pro {
+  border-color: rgb(147, 206, 255);
+}
+.annotation-link {
+  /* display: block; */
+  transition: all .2s ease-in-out;
+  color: rgba(0, 0, 0, 0);
+  font-size: .9rem;
+  margin-bottom: 10px;
+  letter-spacing: 1.5px;
+  opacity: .55;
+}
+.link-wrapper {
+  display: inline-block;
+  padding-left: 18px;
+}
 .highlight {
   text-decoration: none;
   color: black;
   background: #ffffff;
-  border: 3px solid #fff;
+  border: none;
   border-bottom: 3px solid rgb(255, 147, 147);
-  /* border-radius: 20px; */
   position: relative;
   display: inline-block;
   transition: all .2s ease-in-out; 
@@ -298,67 +347,24 @@ h1 {
   pointer-events: auto;
   outline: none;
   margin: 0;
-  font-size: 1rem;
-  padding: 3px 0 2px;
-  /* margin: auto 3px; */
+  margin-top: -3px;
+  /* font-size: 1rem; */
+  padding: 3px 2px 2px;
 }
-.annotation {
-  color: rgba(0, 0, 0, 0);
-  transition: all .2s ease-in-out; 
-  margin: 0;
-
-}
-.update {
-  margin-top: 5vh;
-}
-#update-ann {
-  padding: 46vh 0 0;
-}
-
-.univ {
-  margin-top: 100px;
-}
-#univ-ann {
-  padding-top: 3vh;
-}
-
-.swiss {
-  margin-top: 100px;
-}
-#swiss-ann {
-  padding-top: 3vh;
-}
-@media screen and (max-width: 1458px) {
-  .univ {
-    margin-top: 147px;
-  }
-}
-@media screen and (max-width: 1291px) {
-  .annotation {
-    padding-top: 340px;
-  }
-  .update {
-    margin-top: 312px;
-  }
-}
-@media screen and (max-width: 992px) {
-  .annotation {
-    padding-top: 370px;
-  }
-  .update {
-    margin-top: 336px;
-  }
-}
-@media screen and (max-width: 883px) {
-  .update {
-    margin-top: 335px;
-  }
+.highlight_pro {
+  border-bottom-color:rgb(147, 206, 255);
 }
 .highlight:hover {
   cursor: pointer;
   color: black;
   background: rgb(253, 236, 236);
   border-bottom-color: rgb(233, 113, 113);
+  transform: scale(1);
+
+}
+.highlight_pro:hover {
+  background: rgb(236, 243, 253);
+  border-bottom-color:rgb(100, 180, 245);
 }
 .highlight-clicked {
   cursor: pointer;
@@ -366,9 +372,61 @@ h1 {
   background: rgb(255, 224, 224);
   border-bottom-color: rgb(197, 58, 58);
 }
-.click-white {
-  color: white;
+.highlight-clicked_pro {
+  cursor: pointer;
+  color: black;
+  background: rgb(219, 230, 247);
+  border-bottom-color:rgb(28, 153, 255);
 }
-.hvr-white {
+.ann-click {
+  color: #e2e2e2;
+  border-color: rgb(197, 58, 58);
+
+}
+.ann-hvr {
   color: white;
+  border-color: rgb(233, 113, 113);
+}
+.ann-click_pro {
+  color: #e2e2e2;
+  border-color: rgb(28, 153, 255);
+
+}
+.ann-hvr_pro {
+  color: white;
+  border-color: rgb(100, 180, 245);
+}
+
+
+/* media queries */
+@media screen and (max-width: 1458px) {
+}
+
+
+
+a {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: .2rem;
+  /* letter-spacing: 1px; */
+}
+a:hover {
+  text-decoration: underline;
+  font-size: .95rem;
+  opacity: 1;
+  /* letter-spacing: 1px; */
+}
+.annotation p {
+  margin: 0;
+
+}
+.brutalistwebsite {
+  padding-left: 0;
+}
+iframe {
+  display: none;
+}
+.video {
+  display: inline-block;
+  border: none;
 }

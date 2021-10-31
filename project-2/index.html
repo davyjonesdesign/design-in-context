@@ -3,24 +3,28 @@
   <head>
     <meta charset="UTF-8" />
     <title>MCAD: Design in Context Project 2 POC</title>
-    <link rel="stylesheet" href="https://use.typekit.net/euc2cwz.css" />
-    <link rel="stylesheet" href="https://use.typekit.net/fph1cns.css" />
-    <link rel="stylesheet" href="https://use.typekit.net/tnt7amz.css">
+    <link rel="stylesheet" href="https://use.typekit.net/ifo5vvf.css">
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
-    <p id="helptext">Hover and click on the underlined text...</p>
+    <div id="" class="helptext">
+      <div>
+        <p><b>Hover and click on the underlined text on left screen.</b></p>
+        <p><button class="highlight">Red Underline - Criticism</button>     <button class="highlight highlight_pro">Blue Underline - Expansion</button></p>
+      </div>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" id="close"><path d="M32,2.00014V2a2,2,0,0,0-2-2h0a3.70692,3.70692,0,0,0-2.62118,1.08573l-10.6717,10.6717a1,1,0,0,1-1.41422,0L4.62119,1.08573A3.70692,3.70692,0,0,0,2,0H2A2,2,0,0,0,0,2v.00014A3.70689,3.70689,0,0,0,1.08573,4.62131L11.75737,15.293a1,1,0,0,1,0,1.41422L1.08573,27.37881A3.70692,3.70692,0,0,0,0,30v0a2,2,0,0,0,2,2h.00014a3.70689,3.70689,0,0,0,2.62117-1.08573L15.29289,20.24269a1,1,0,0,1,1.41422,0L27.37869,30.91427A3.70689,3.70689,0,0,0,29.99986,32H30a2,2,0,0,0,2-2v0a3.70692,3.70692,0,0,0-1.08573-2.62118L20.24263,16.70717a1,1,0,0,1,0-1.41422L30.91427,4.62131A3.70689,3.70689,0,0,0,32,2.00014Z"/></svg>
+    </div>
     <div class="wrapper">
       <div class="left">
         <div id="col-lft" class="screen">
           <div class="shadow"></div>
           <div class="header" id="myHeader">
             <div class="logo">
-              <h1 class="blue">
-                Ma<span class="red">ter</span
-                ><span class="yellow">ial</span> De<span class="green">si</span
-                ><span class="red">gn</span><span class="gray"> is a </span
-                ><span class="darkgray">Political Choice</span>
+              <h1 id="hl-ironic" class="highlight">
+                  <span class="blue">Ma</span><span class="red">ter</span
+                  ><span class="yellow">ial</span> <span class="blue">De</span><span class="green">si</span
+                  ><span class="red">gn</span><span class="gray"> is a </span
+                  ><span class="darkgray">Political Choice</span>
               </h1>
             </div>
 
@@ -80,8 +84,7 @@
               Material Design is presented as a<button
                 id="hl-universal"
                 class="highlight"
-              >
-                universal and neutral language</button
+              >universal and neutral language</button
               >a that every designer and developer should put into practice.
             </p>
 
@@ -96,44 +99,43 @@
             </p>
             <p>
               Modernism appears after the carnage of the First World War and it
-              was built from a utopian desire of achieving a universal language
-              that would sustain harmonious communication between all nations.
+              was built from a <button id="hl-utopian" class="highlight highlight_pro">utopian</button> desire of achieving a universal language
+              that would sustain <button id="hl-harmonious" class="highlight">harmonious</button> communication between all nations.
             </p>
             <p>
               If we take a look at Material Design we can see that it's clearly
               influenced by the aesthetics and the ideology of Modernism. So
-              much that it shares the same condescending attitude, as Google
+              much that it shares the same <button id="hl-condescending" class="highlight">condescending attitude</button>, as Google
               usually tells everyone what the best way to do things is and
               provides the tools to reproduce it.
             </p>
             <p>
-              Everything is very well documented and, with an “open source”
-              rhetoric, they ensure that everyone practices their guidelines.
+              Everything is very well documented and, with an<button id="hl-openSource" class="highlight highlight_pro">“open source”</button>rhetoric, they <button id="hl-trojan" class="highlight highlight_pro">ensure that everyone</button> practices their guidelines.
               And that can be a problem.
             </p>
 
-            <h4>Pure and neutral aesthetics</h4>
+            <h3>Pure and neutral aesthetics</h3>
 
             <p>
               When only one perspective dominates the discourse of what
               constitutes good design, the doors to many other different
-              aesthetics are closed. All the different forms, colors, typography
+              aesthetics are closed. All the different forms, <button id="hl-color" class="highlight highlight_pro">colors</button>, typography
               and other elements are filled with meaning and have deep cultural
               impact.
             </p>
             <p>
-              The idea of a neutral “pure” aesthetic is a myth. That’s why, for
+              The idea of a neutral “pure” aesthetic is a <button id="hl-myth" class="highlight">myth</button>. That’s why, for
               instance, the western culture can't recognize the Nazi swastika as
-              a simple form. It’s a taboo in the history of graphic design
+              a simple form. It’s a <button id="hl-taboo" class="highlight highlight_pro">taboo</button> in the history of graphic design
               because it represents sociocultural problems, the Second World War
               and the Holocaust.
             </p>
             <p>
               In a similar way, when we make use of Material Design as an
               aesthetic for our interface designs, we are not just making a
-              cosmetic choice. It's also a political choice.
+              <button id="hl-cosmetic" class="highlight">cosmetic</button> <button id="hl-choice" class="highlight highlight_pro">choice</button>. It's also a political choice.
             </p>
-            <p>We are representing Google, whatever that might mean.</p>
+            <p>We are <button id="hl-rep" class="highlight">representing Google</button>, whatever that might mean.</p>
             <p>
               Google is a multinational corporation that represents a particular
               culture and Material Design is just another tentacle of the
@@ -141,32 +143,29 @@
             </p>
             <p>
               That’s why, more than ever, movements like <button id="hl-brutal" class="highlight">Web-Brutalism</button> that have
-              the boldness and the courage to question those “rational
-              aesthetics”, dictated by science and technology, are very
+              the boldness and the courage to question those <button id="hl-rational" class="highlight">“rational
+                aesthetics”</button>, dictated by science and technology, are very
               relevant.
             </p>
             <p>It reminds me of the Postmodernism era.</p>
+            <h3>
+              Postmodernism: rejecting the formal organization
+            </h3> 
             <p>
-              Postmodernism: rejecting the formal organization Postmodernism is
-              a broad movement that began in the 70’s and it was a drastic break
-              from the modernists utopian visions. With an attitude of
-              skepticism and irony, they completely rejected the rational order
-              and formal organization.
+             Postmodernism is a broad movement that began in the 70’s and it was a <button id="hl-break" class="highlight highlight_pro">drastic break</button> from the modernists utopian visions. With an attitude of skepticism and irony, they completely rejected the rational order and formal organization.
             </p>
-            <p>No more rules!</p>
+            <p><button id="hl-rules" class="highlight">No more rules!</button></p>
             <p>
               If for modernists form should follow functions, for
-              post-modernists, form is the function.
+              post-modernists, <button id="hl-form" class="highlight highlight_pro">form is the function</button>.
             </p>
             <p>
               We need to let ourselves be inspired by this kind of movements and
               other tendencies of graphic design outside of the western culture.
-              Difference and opposition are essential to run a democratic and
-              inclusive web.
+              Difference and opposition are essential to run a <button id="hl-demo" class="highlight highlight_pro">democratic and inclusive</button> web.
             </p>
             <p>
-              We should stop using frameworks like Material Design and
-              Bootstrap.
+              We should stop using frameworks like Material Design and <button id="hl-bootstrap" class="highlight highlight_pro">Bootstrap</button>.
             </p>
             <p>
               Legibility-communication must never be impaired by an a priori
@@ -176,35 +175,29 @@
               The aesthetic should be the result of your user's needs and
               business goals.
             </p>
-            <h4>Learning from graphic design</h4>
+            <h3>Learning from graphic design</h3>
             <p>
               It's a fact that when the time comes to build digital products for
               specific clients, it's a risk to think outside of the box, as we
-              fear to lack on the user experience. However, the real challenge
-              is to design the same mental models with different forms. We can
-              innovate and still respect the web standards.
+              fear to lack on the user experience. However, the <button id="hl-real" class="highlight">real challenge</button> is to design the same <button id="hl-model" class="highlight">mental models</button> with different forms. We can
+              innovate and still respect the <button id="hl-standards" class="highlight">web standards</button>.
             </p>
             <p>
-              Nowadays, with tools like CSS Grid and Flexbox, we have more
+              Nowadays, with tools like CSS <button id="hl-flexGrid" class="highlight">Grid and Flexbox</button>, we have more
               possibilities to rethink layouts and what they can be, as we did
               in the past with Post-Modernism or Deconstructivism.
             </p>
             <p>
-              Jen Simons and Rachel Andrews have been doing a great job showing
+              <button id="hl-jenSimons" class="highlight highlight_pro">Jen Simons</button> and Rachel Andrews have been doing a great job showing
               us how easy it can be and what we can do. Take the chance to check
               some of Jen's experiments at labs.jensimmons.com and get to know
               her great work.
             </p>
             <p>
-              Our users are becoming smarter than ever, owning a vast digital
-              culture. They are open and I would even say that they want
-              interfaces that both challenge them and trigger curiosity.
+              Our users are becoming smarter than ever, owning <button id="hl-vast" class="highlight">a vast digital culture</button>. They are open and I would even say that they want interfaces that both challenge them and trigger curiosity.
             </p>
             <p>
-              The evolution that graphic design faced through its history should
-              not be ignored when embracing web design, as the lack of critical
-              thinking will make us repeat the same mistakes over and over
-              again.
+              The evolution that graphic design faced through its history should not be ignored when embracing web design, as the lack of <button id="hl-think" class="highlight">critical thinking</button> will make us repeat the same <button id="hl-mistakes" class="highlight">mistakes</button> over and over again.
             </p>
           </div>
         </div>
@@ -213,133 +206,145 @@
       </div>
       <div class="col-wrapper">
         <div class="col" id="col-rt">
-          <p class="annotation" id="update-ann">
-            Since this article was published, Material updated their design
-            guidelines, components and resources about a dozen times. Many of
-            which have been centered around accessibility.
+          <p class="annotation ironic-ann">
+            This article is published on a website that uses bootstrap, jquery, prism library, google fonts, google analytics, google tag manager, etc. It is ironic that this article makes assertions that “we should stop using frameworks like Material Design and Bootstrap” all while making the “political choice” to use those frameworks as their means of publication.
           </p>
-          <p class="annotation" id="univ-ann">
-            There we can find a list of formal and functional generic guidelines
-            to embody most of our digital interface designs. Material Design is
-            presented as a universal and neutral language that every designer
-            and developer should put into practice.
+          <div class="link-wrapper">
+            <a href="https://web.imaginarycloud.com/" target="_blank" rel="noopener noreferrer" class="annotation-link ironic-ann">web.imaginarycloud.com</a>
+          </div>
+          <p class="annotation update-ann">
+            Since this article was published, Material has a dozen or so more updates/enhancements to their design guidelines, components, and resources. Many of which have been centered around accessibility.
           </p>
-
-          <p class="annotation" id="swiss-ann">
-            Ribeiro makes a synonymous connection between the Modernism movement
-            and Swiss Style. While the Swiss Style was an expression of
-            Modernism that held great influence on the movement, a distinction
-            should be made considering the excess of Modernist expressions that
-            held little to no connections to the Swiss.
+          <div class="link-wrapper">
+            <a href="https://material.io" target="_blank" rel="noopener noreferrer" class="annotation-link update-ann">Material Design Website (material.io)</a>
+          </div>
+          <p class="annotation univ-ann">
+            Ribeiro may be mischaracterizing Material’s role here. The terms universal and neutral are never used on Google’s Material website. Instead they describe themselves as “an adaptable system of guidelines, components, and tools that support the best practices of user interface design”. They use the term “best practices”, denoting their belief in a universal UI language while also acknowledging that their role is that of  “support”. That phrasing does not necessarily imply ownership over those intangible ideas, but rather explains that they are focused on striving towards that end. 
           </p>
-          <p class="annotation" id="brutal-ann">
-            Modernism appears after the carnage of the First World War and it
-            was built from a utopian desire of achieving a universal language
-            that would sustain harmonious communication between all nations.
+          <p class="annotation swiss-ann" >
+            Ribeiro makes a synonymous connection between the Modernism movement and Swiss Style. The Swiss Style was an expression of Modernism that held great influence on the movement but is most accurately seen as a subsection and not synonymous with the movement as a whole.
           </p>
-          <p class="annotation">
-            If we take a look at Material Design we can see that it's clearly
-            influenced by the aesthetics and the ideology of Modernism. So much
-            that it shares the same condescending attitude, as Google usually
-            tells everyone what the best way to do things is and provides the
-            tools to reproduce it.
+          <p class="annotation utopian-ann" >
+            The introduction of Helvetica font in 1958 while rooted in the principles of the 1920s’ New Typography continued to cement the desire for clear and structured forms of communication that the new business world demanded. Michael Beruit, a prominent design figure commented on the design ethos at the time: “I had no doubt whatsoever that the purpose of graphic design was to improve the life of every person on earth beyond measure by exposing him or her to Helvetica on a three-column grid. That was certainty, and it made design into a crusade.” While his remarks on form were narrow-minded in hindsight, he does get one thing right: any design ethos held with such strong conviction should manifest itself into a crusade (Pater, 50). 
           </p>
-          <p class="annotation">
-            Everything is very well documented and, with an “open source”
-            rhetoric, they ensure that everyone practices their guidelines. And
-            that can be a problem.
+          <div class="link-wrapper annotation-link utopian-ann">Pater, Ruben. <b>The Politics of Design</b>: A (Not SO) Global Manual for Visual Communication. BIS Publishers, 2017. 
+          </div>
+          <p class="annotation harmonious-ann" >
+            While this idea of “harmonious communication between all nations” may have been the ideal, the pragmatic application of cross-culture communication itself became a tool of cold war politics during the mid to late 20th century. Pater cites the 1965 US Foreign Affairs Committee in their approach to behavioral sciences. They openly shared that one of their goals was to discover “how this knowledge can be applied to governmental undertakings designed to carry out the foreign policy of the United States (Pater, 123).
           </p>
-
-
-          <p class="annotation">
-            When only one perspective dominates the discourse of what
-            constitutes good design, the doors to many other different
-            aesthetics are closed. All the different forms, colors, typography
-            and other elements are filled with meaning and have deep cultural
-            impact.
+          <div class="link-wrapper annotation-link harmonious-ann">Pater, Ruben. <b>The Politics of Design</b>: A (Not SO) Global Manual for Visual Communication. BIS Publishers, 2017. 
+          </div>
+          <p class="annotation condescending-ann" >
+            Ribeiro fails to provide evidence for Google’s “condescending attitude” in sharing their knowledge and resources. This is a biased assertion that he makes without any argument other than referring to Google’s ties to modern design. Pater cites a similar circumstance in his retelling of AIGA’s research and recommendations for election forms that sent to all voting officials. The argument could be made that each entity may have its own agenda for doing so and take the initiative to make their research-based perspectives known and readily available. But neither force their treatments on anyone else (Pater 173).
           </p>
-          <p class="annotation">
-            The idea of a neutral “pure” aesthetic is a myth. That’s why, for
-            instance, the western culture can't recognize the Nazi swastika as a
-            simple form. It’s a taboo in the history of graphic design because
-            it represents sociocultural problems, the Second World War and the
-            Holocaust.
+          <div class="link-wrapper annotation-link condescending-ann">Pater, Ruben. <b>The Politics of Design</b>: A (Not SO) Global Manual for Visual Communication. BIS Publishers, 2017. 
+          </div>
+          <p class="annotation openSource-ann">
+            Google ironically claimed that it was “standing up” to other major web companies who threatened to dominate certain technology environments. For example, when Google launched the Android Open-Source Project in 2007, Andy Rubin stated that if Google did not act, we would face a Draconian future where one man, on company, on device, on carrier would be our only choice (referring to Apple). Android was welcomed by the Apple-dominated mobile market. Making it open source allowed it to rapidly carve out the market to the point of maintaining approximately 75% of the market over the last four years.
           </p>
-          <p class="annotation">
-            In a similar way, when we make use of Material Design as an
-            aesthetic for our interface designs, we are not just making a
-            cosmetic choice. It's also a political choice.
+          <div class="link-wrapper">
+            <a href="https://www.statista.com/statistics/272698/global-market-share-held-by-mobile-operating-systems-since-2009/" target="_blank" rel="noopener noreferrer" class="annotation-link openSource-ann">Mobile Global Market Share (Statista.com)</a>
+            <br>
+            <a href="https://arstechnica.com/gadgets/2018/07/googles-iron-grip-on-android-controlling-open-source-by-any-means-necessary/" target="_blank" rel="noopener noreferrer" class="annotation-link openSource-ann">Google’s iron grip on Android (arstechnica.com)</a>
+          </div>
+          <p class="annotation trojan-ann">
+            Google released Android to open-source a hidden caveats – google services, Google has slowly tried very hard to recapture Android from the open-source space through the back door they designed it with - the open parts from the Android Open-Source Project (AOSP), which are the foundation of Android, and the closed source parts, which are all the Google-branded apps (Gmail, Maps, Talk, and YouTube).
           </p>
-          <p class="annotation">
-            We are representing Google, whatever that might mean.
+          <div class="link-wrapper">
+            <a href="https://arstechnica.com/gadgets/2018/07/googles-iron-grip-on-android-controlling-open-source-by-any-means-necessary/" target="_blank" rel="noopener noreferrer" class="annotation-link trojan-ann">Google’s iron grip on Android (arstechnica.com)</a>
+          </div>
+          <p class="annotation color-ann">
+            According to Pater, color psychology and meaning varies with little congruence across cultures. He argues that the cultural meaning of colors “can change over time and depend on context” (Pater, 75).
           </p>
-          <p class="annotation">
-            Google is a multinational corporation that represents a particular
-            culture and Material Design is just another tentacle of the octopus
-            that monopolizes the Web.
+          <div class="link-wrapper annotation-link color-ann">Pater, Ruben. <b>The Politics of Design</b>: A (Not SO) Global Manual for Visual Communication. BIS Publishers, 2017. 
+          </div>
+          <p class="annotation myth-ann">
+            Ribeiro argues that this “pure” or universal aesthetic is a muyth. However, ASCII has made great strides in creating a system that is “capable of including all languages of the world”. Unicode is constantly updated with new scripts and non-lingual character sets (Pater, 37).
           </p>
-          <p class="annotation">
-            That’s why, more than ever, movements like Web-Brutalism that have
-            the boldness and the courage to question those “rational
-            aesthetics”, dictated by science and technology, are very relevant.
+          <div class="link-wrapper annotation-link myth-ann">Pater, Ruben. <b>The Politics of Design</b>: A (Not SO) Global Manual for Visual Communication. BIS Publishers, 2017. 
+          </div>
+          <p class="annotation taboo-ann">
+            Pater argues, “symbols may have similar origins, but the way they are perceived is very culturally dependent”. He also cites Andreas Fugelsang who "confirms that reading images is a skill that has to be taught” (Pater, 134). When removed from its historical and cultural context, the swastika could be perceived as something different and neutral by cultures removed from the events of World War II and Nazi Germany.
           </p>
-          <p class="annotation">It reminds me of the Postmodernism era.</p>
-          <p class="annotation">
-            Postmodernism: rejecting the formal organization Postmodernism is a
-            broad movement that began in the 70’s and it was a drastic break
-            from the modernists utopian visions. With an attitude of skepticism
-            and irony, they completely rejected the rational order and formal
-            organization.
+          <div class="link-wrapper annotation-link taboo-ann">Pater, Ruben. <b>The Politics of Design</b>: A (Not SO) Global Manual for Visual Communication. BIS Publishers, 2017. 
+          </div>
+          <p class="annotation cosmetic-ann">Material design isn’t only driven by arbitrary cosmetics but also through their focus on user research, accessibility, and advancement in technology. A few of the tenants they hold to regarding accessibility are to learn about global user communities & how they use technology and to be mindful about representing users inclusively. The list goes on, but it is evident that Material bases their decisions on multiple points of information that seemingly originates from outside the design system.</p>
+          <div class="link-wrapper">
+            <a href="https://design.google/library/designing-global-accessibility-part-1/" target="_blank" rel="noopener noreferrer" class="annotation-link cosmetic-ann">Designing Global Accessibility (design.google)</a>
+          </div>
+          <p class="annotation choice-ann">
+            Because much of the web already reflects Material Design, users have been indoctrinated to expect that aesthetic and therefore it is more likely that any user testing and research is skewed in favor of Material.
           </p>
-          <p class="annotation">No more rules!</p>
-          <p class="annotation">
-            If for modernists form should follow functions, for post-modernists,
-            form is the function.
+          <p class="annotation rep-ann">
+            It may be an oversimplification to say that using any of Google’s design system (even as a basis) is representing their corporation. 
           </p>
-          <p class="annotation">
-            We need to let ourselves be inspired by this kind of movements and
-            other tendencies of graphic design outside of the western culture.
-            Difference and opposition are essential to run a democratic and
-            inclusive web.
+          <p class="annotation brutal-ann">Pascal Deville, a founder of the <a class="annotation-link brutalistwebsite brutal-ann" href="https://brutalistwebsites.com" target="_blank" rel="noopener noreferrer">brutalistwebsites.com</a>, does not limit Web-Brutalism to a purely reactionary movement but instead points out three approaches within the design movement: purists (archetectural focus, "truth to materials"), ux minimalists (efficiency and performance focus), "anti-sts"/artists (art focus, no regard for 'status quo')</p>
+          <div class="link-wrapper">
+            <a class="annotation-link brutal-ann" href="https://brutalistwebsites.com" target="_blank" rel="noopener noreferrer">Brutalist Web Design is Taking Over... (uxdesign.cc)</a>
+          </div>
+          <p class="annotation rational-ann">
+            I wish there was more here discussing the issue of design done in favor of machine rather than in favor of human health.
           </p>
-          <p class="annotation">
-            We should stop using frameworks like Material Design and Bootstrap.
+          <p class="annotation break-ann">
+            As a reaction to much of the turmoil seen during the World Wars, many postmodernists hold that the unharnessed chase of scientific and technological knowledge is what led to the Holocaust and other genocides of the 19th and 20th centuries. Some postmodernists even agree “that science and technology—and even reason and logic—are inherently destructive and oppressive”. 
           </p>
-          <p class="annotation">
-            Legibility-communication must never be impaired by an a priori
-            aesthetics.
+          <div class="link-wrapper">
+            <a class="annotation-link break-ann" href="https://www.britannica.com/topic/postmodernism-philosophy" target="_blank" rel="noopener noreferrer">Postmodernism Philosophy (britannica.com)</a>
+          </div>
+          <p class="annotation rules-ann">
+            Maria Grilo states, “…the raw, ‘original’ Web-Brutalism will straight up ignore all the User Centered Design principles there are as a statement.” A bucking of the rules as a rule is a difficult standard. These new rules reflect opposition in their nature and seem hollow without the context of the original best practices they aim to depose.
           </p>
-          <p class="annotation">
-            The aesthetic should be the result of your user's needs and business
-            goals.
+          <div class="link-wrapper">
+            <a class="annotation-link rules-ann" href="https://www.imaginarycloud.com/blog/why-we-need-web-brutalism/" target="_blank" rel="noopener noreferrer">Why We Need Web Brutalism (imaginarycloud.com)</a>
+          </div>
+          <p class="annotation form-ann">
+            In some cases, function is enriched by the form-first approach. For example, Pater cites the stick charts of the Marshall Islands which were the first maps to chart ocean swells. These maps were unconventionally constructed, and their unique tactile form allowed navigators to memorize them more easily (Pater, 161).
           </p>
-          <p class="annotation">
-            It's a fact that when the time comes to build digital products for
-            specific clients, it's a risk to think outside of the box, as we
-            fear to lack on the user experience. However, the real challenge is
-            to design the same mental models with different forms. We can
-            innovate and still respect the web standards.
+          <div class="link-wrapper annotation-link form-ann">Pater, Ruben. <b>The Politics of Design</b>: A (Not SO) Global Manual for Visual Communication. BIS Publishers, 2017. 
+          </div>
+          <p class="annotation demo-ann">
+            Movements challenging the current web norms are essential to any progress towards inclusion. Design history reflects a largely Western-dominated reality. Robert Young argues that “centuries of cultural dominance and colonization have left their trace making white culture the reference point for art, ideas, science, and language.” (Pater, 123).
           </p>
-          <p class="annotation">
-            Nowadays, with tools like CSS Grid and Flexbox, we have more
-            possibilities to rethink layouts and what they can be, as we did in
-            the past with Post-Modernism or Deconstructivism.
+          <div class="link-wrapper annotation-link demo-ann">Pater, Ruben. <b>The Politics of Design</b>: A (Not SO) Global Manual for Visual Communication. BIS Publishers, 2017. 
+          </div>
+          <p class="annotation bootstrap-ann">
+            Bootstrap is an open-source CSS framework used in building responsive websites. It was originally pioneered by Twitter but quickly became free and publicly available. While this framework comes with the advantages of more accessible responsiveness, compatibility, and documentation, it also has some key disadvantages. Because it is so widely used the style is repetitive. Additionally, websites utilizing it take longer to load and drain battery life faster. 
           </p>
-          <p class="annotation">
-            Jen Simons and Rachel Andrews have been doing a great job showing us
-            how easy it can be and what we can do. Take the chance to check some
-            of Jen's experiments at labs.jensimmons.com and get to know her
-            great work.
+          <div class="link-wrapper">
+            <a class="annotation-link bootstrap-ann" href="https://www.codecademy.com/resources/blog/what-is-bootstrap/" target="_blank" rel="noopener noreferrer">What Is Bootstrap? (codecademy.com)</a>
+          </div>
+          <p class="annotation real-ann">
+            The struggle is determining which takes precedence, models or forms. In brutalism, form takes precedence while modernism emphasizes models.
           </p>
-          <p class="annotation">
-            Our users are becoming smarter than ever, owning a vast digital
-            culture. They are open and I would even say that they want
-            interfaces that both challenge them and trigger curiosity.
+          <p class="annotation model-ann">
+            It is unclear what he means by “mental model”. Is he using this phrase interchangebly with 'function'?
           </p>
-          <p class="annotation">
-            The evolution that graphic design faced through its history should
-            not be ignored when embracing web design, as the lack of critical
-            thinking will make us repeat the same mistakes over and over again.
+          <p class="annotation standards-ann">
+            Ribeiro misuses the term ‘web standards’ as he ascribes them to being another entity controlled by Google. However, web standards are determined by the World Wide Web Consortium, a collaborative international community. However, the consortium was pioneered by Tim Berners-Lee in the 1990s at MIT and has since added only three other ‘hosts institutions’: ERCIM (Europe), Keio University (Japan), and Beihang University (China). The control over web standards remains within the hands of the west and has made little significant effort in diversifying that control. Should we respect these standards if they are Anglo-American dominant?
+          </p>
+          <div class="link-wrapper">
+            <a class="annotation-link standards-ann" href="https://www.w3.org/Consortium/facts" target="_blank" rel="noopener noreferrer">World Wide Web Consortium (w3.org)</a>
+          </div>
+          <p class="annotation flexGrid-ann">
+            These layout models automatically display as left-to-right and top-to-bottom. While there are methods to reverse this order (row-reverse, column-reverse), the default has been set with the direction of Latin writing scripts in mind. For scripts that are read right-to-left, an extra line of code is needed. When comparing use of Latin scripts and Arabic scripts in visual communication, Pater argues that anytime “a Latin script is used to dictate the form, the Arabic script becomes secondary, disregarding the visual and cultural heritage” (Pater, 31).           
+          </p>
+          <div class="link-wrapper annotation-link flexGrid-ann">Pater, Ruben. <b>The Politics of Design</b>: A (Not SO) Global Manual for Visual Communication. BIS Publishers, 2017. 
+          </div>
+          <p class="annotation jenSimons-ann">
+            Here’s a link to an excellent conference talk by Jen Simons where she illustrates many new and different methods of getting out web design ruts.
+          </p>
+          <div class="link-wrapper annotation-link jenSimons-ann">“Modern Layouts: Getting Out of Our Ruts” by Jen Simmons – An Event Apart Austin 2015
+          </div>
+          <iframe class="annotation vid jenSimons-ann" width="100%" min-height="100px" src="https://www.youtube.com/watch?v=jreccgYLfx8">
+          </iframe>
+          <p class="annotation vast-ann">
+            “A vast digital culture” that was largely set and formed by Google itself. Their influence has determined for multiple generations the concept of GPS, maps, information, and even phones and tablets. How much can the fish see or even fight against the water it swims in?
+          </p>
+          <p class="annotation think-ann">
+            Critical thinking fits within modern and postmodern perspectives. The issue here isn’t a lack of critical thinking. Here, Ribeiro is too focused on pitting the differing perspectives against each other as if only one is right (post-modern). Rather, the issue is the lack of education. The importance is to know and understand the drawbacks and benefits of both perspectives.
+          </p>
+          <p class="annotation mistakes-ann">
+            Which past mistakes? When in the past did we let a multibillion dollar corporation set the standard/culture for web interaction? And if there were other issues with past design movements, he does not make mention of them in the article.
           </p>
         </div>
 
