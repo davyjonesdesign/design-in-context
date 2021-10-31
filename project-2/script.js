@@ -331,14 +331,12 @@ $(document).ready(function () {
   $("#hl-jenSimons").click(
     function () {
       $(".jenSimons-ann").toggleClass("ann-click_pro");
-      $(".vid").toggleClass("video");
       $("#hl-jenSimons").toggleClass("highlight-clicked_pro")
     }
   );
   $("#hl-jenSimons").hover(
     function () {
       $(".jenSimons-ann").toggleClass("ann-hvr_pro");
-      $(".vid").toggleClass("video");
     }
   );
   // "vast" annotation
